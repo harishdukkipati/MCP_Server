@@ -8,7 +8,7 @@ print("API key:", openai.api_key)
 
 def ask_llm(prompt):
     response = openai.chat.completions.create(
-        model="gpt-4",  # or "gpt-3.5-turbo"
+        model="gpt-4", 
         messages=[
             {"role": "system", "content": "You are an educational assistant."},
             {"role": "user", "content": prompt}
